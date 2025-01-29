@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #EEE9E1;
+  --primary: #1A1A1A;
+  --secondary: #4A4A4A;
+  --accent: #2E7D32;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased;
+  }
+
+  /* Melhorar a legibilidade do texto */
+  p {
+    @apply leading-relaxed;
+  }
+
+  /* Estilo para links */
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  /* Estilo para botões */
+  button {
+    @apply transition-all duration-200;
+  }
+}
+
+/* Animações suaves */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
