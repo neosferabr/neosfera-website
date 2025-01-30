@@ -4,12 +4,12 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import MathAnimation from "@/components/MathAnimation"
 import {
-  DocumentTextIcon,
-  BeakerIcon,
-  ShieldCheckIcon,
-  ClipboardDocumentCheckIcon,
-  UserGroupIcon,
-  CalendarDaysIcon
+  SparklesIcon,
+  PhotoIcon,
+  BuildingStorefrontIcon,
+  RectangleGroupIcon,
+  ClockIcon,
+  ChartBarIcon
 } from '@heroicons/react/24/outline'
 import YouTubeEmbed from '@/components/YouTubeEmbed'
 
@@ -48,17 +48,17 @@ export default function ICulinaryChef() {
             />
           </div>
           <motion.h1 
-            className="font-sans text-4xl md:text-6xl lg:text-7xl text-primary mb-6 font-extrabold tracking-tight"
+            className="font-sans text-4xl md:text-6xl lg:text-7xl text-[#333333] mb-6 font-extrabold tracking-tight"
             variants={fadeIn}
           >
-            Seu assistente virtual de <span className="text-accent">gastronomia</span>
+            Revolucione sua <span className="text-accent">produção de conteúdo</span> gastronômico
           </motion.h1>
           <motion.p 
             className="font-serif text-lg md:text-xl max-w-2xl text-secondary leading-relaxed"
             variants={fadeIn}
           >
-            Potencialize sua criatividade culinária e eficiência operacional com um 
-            assistente virtual especializado em gastronomia.
+            Transforme a maneira como estúdios culinários e indústrias alimentícias criam e planejam 
+            conteúdo para suas marcas com inteligência artificial.
           </motion.p>
         </motion.div>
       </section>
@@ -75,7 +75,7 @@ export default function ICulinaryChef() {
           <motion.div variants={fadeIn}>
             <YouTubeEmbed 
               videoId="ZxzI9G6Cnbo" 
-              title="Demonstração iCulinaryChef - Assistente Virtual para Gastronomia"
+              title="Demonstração iCulinaryChef - Plataforma de Produção de Conteúdo Gastronômico"
             />
           </motion.div>
         </motion.div>
@@ -94,39 +94,39 @@ export default function ICulinaryChef() {
             className="font-sans text-3xl md:text-4xl text-primary mb-16 text-center font-extrabold"
             variants={fadeIn}
           >
-            Recursos <span className="text-accent">Especializados</span>
+            Recursos <span className="text-accent">Inovadores</span>
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {[
               {
-                title: "Desenvolvimento de Receitas",
-                description: "IA que auxilia na criação e adaptação de receitas com base em ingredientes disponíveis.",
-                icon: DocumentTextIcon
+                title: "Planejamento Inteligente",
+                description: "Sistema que considera sazonalidade, público-alvo e objetivos específicos de cada marca na criação de receitas.",
+                icon: SparklesIcon
               },
               {
-                title: "Harmonização Inteligente",
-                description: "Sugestões de harmonização de ingredientes e bebidas baseadas em análise sensorial.",
-                icon: BeakerIcon
+                title: "Gestão de Sessões",
+                description: "Planejamento otimizado de sessões fotográficas e produção de conteúdo, maximizando recursos e tempo.",
+                icon: PhotoIcon
               },
               {
-                title: "Controle de Alergênicos",
-                description: "Identificação e gestão automática de alergênicos em receitas e preparações.",
-                icon: ShieldCheckIcon
+                title: "Gestão de Marcas",
+                description: "Guidelines específicos por marca garantindo consistência na comunicação e alinhamento com a identidade visual.",
+                icon: BuildingStorefrontIcon
               },
               {
-                title: "Fichas Técnicas",
-                description: "Geração e atualização automática de fichas técnicas com cálculos precisos.",
-                icon: ClipboardDocumentCheckIcon
+                title: "Adaptação Multiplataforma",
+                description: "Conteúdo automaticamente otimizado para diferentes redes sociais e canais de comunicação.",
+                icon: RectangleGroupIcon
               },
               {
-                title: "Treinamento Virtual",
-                description: "Assistente virtual para capacitação contínua da equipe de cozinha.",
-                icon: UserGroupIcon
+                title: "Otimização de Tempo",
+                description: "Redução de até 70% no tempo de planejamento de campanhas culinárias e produção de conteúdo.",
+                icon: ClockIcon
               },
               {
-                title: "Planejamento de Menu",
-                description: "Sugestões inteligentes para composição e rotação de cardápios.",
-                icon: CalendarDaysIcon
+                title: "Analytics Avançado",
+                description: "Análise de performance do conteúdo e insights para otimização contínua das estratégias.",
+                icon: ChartBarIcon
               }
             ].map((feature, index) => (
               <motion.div 
@@ -160,29 +160,21 @@ export default function ICulinaryChef() {
             className="font-sans text-3xl md:text-4xl text-primary mb-16 text-center font-extrabold"
             variants={fadeIn}
           >
-            Resultados <span className="text-accent">Transformadores</span>
+            Benefícios por <span className="text-accent">Segmento</span>
           </motion.h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               {
-                stat: "50%",
-                title: "Mais Criatividade",
-                description: "Aumento na capacidade de inovação em receitas e cardápios."
+                title: "Estúdios de Fotografia",
+                description: "Transforme serviços operacionais em consultivos estratégicos, atenda mais clientes com a mesma estrutura e otimize suas sessões fotográficas."
               },
               {
-                stat: "30%",
-                title: "Menos Desperdício",
-                description: "Redução no desperdício de ingredientes com planejamento inteligente."
+                title: "Indústrias Alimentícias",
+                description: "Garanta consistência na comunicação da marca, acelere a produção de conteúdo e aproveite melhor seu portfólio de produtos."
               },
               {
-                stat: "100%",
-                title: "Padronização",
-                description: "Garantia de consistência em todas as preparações."
-              },
-              {
-                stat: "2x",
-                title: "Mais Eficiência",
-                description: "Aumento na velocidade de desenvolvimento de novos pratos."
+                title: "Profissionais Autônomos",
+                description: "Compita com grandes estúdios, otimize seu tempo de planejamento e ofereça serviços mais sofisticados aos seus clientes."
               }
             ].map((benefit, index) => (
               <motion.div 
@@ -190,10 +182,7 @@ export default function ICulinaryChef() {
                 className="text-center md:text-left"
                 variants={fadeIn}
               >
-                <div className="text-5xl md:text-6xl font-extrabold text-accent mb-4">
-                  {benefit.stat}
-                </div>
-                <h3 className="font-sans text-xl text-primary font-extrabold mb-2">
+                <h3 className="font-sans text-xl text-primary font-extrabold mb-4">
                   {benefit.title}
                 </h3>
                 <p className="font-serif text-secondary">
@@ -218,22 +207,25 @@ export default function ICulinaryChef() {
             className="font-sans text-3xl md:text-4xl mb-8 font-extrabold"
             variants={fadeIn}
           >
-            Pronto para elevar sua gastronomia?
+            Pronto para revolucionar sua produção de conteúdo?
           </motion.h2>
           <motion.p 
             className="font-serif text-lg mb-8"
             variants={fadeIn}
           >
-            Agende uma demonstração e descubra como o iCulinaryChef pode transformar sua cozinha.
+            Agende uma demonstração e descubra como o iCulinaryChef pode transformar sua estratégia de conteúdo gastronômico.
           </motion.p>
-          <motion.button 
-            className="font-sans bg-background text-accent px-8 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
+          <motion.a 
+            href="https://wa.me/5511971916522"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-sans inline-block bg-background text-accent px-8 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
             variants={fadeIn}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Agendar Demo
-          </motion.button>
+            Entre em Contato
+          </motion.a>
         </motion.div>
       </section>
     </>

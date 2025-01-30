@@ -4,12 +4,12 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import MathAnimation from "@/components/MathAnimation"
 import {
-  ClipboardDocumentListIcon,
-  BanknotesIcon,
+  ChatBubbleBottomCenterTextIcon,
+  BookOpenIcon,
   ChartBarIcon,
-  CubeIcon,
-  AcademicCapIcon,
-  PresentationChartLineIcon
+  CurrencyDollarIcon,
+  UserGroupIcon,
+  RocketLaunchIcon
 } from '@heroicons/react/24/outline'
 import YouTubeEmbed from '@/components/YouTubeEmbed'
 
@@ -48,17 +48,17 @@ export default function MeuChef() {
             />
           </div>
           <motion.h1 
-            className="font-sans text-4xl md:text-6xl lg:text-7xl text-primary mb-6 font-extrabold tracking-tight"
+            className="font-sans text-4xl md:text-6xl lg:text-7xl text-[#333333] mb-6 font-extrabold tracking-tight"
             variants={fadeIn}
           >
-            Gestão inteligente para <span className="text-accent">cozinhas profissionais</span>
+            Relacionamento <span className="text-accent">ativo e inteligente</span> com seus clientes
           </motion.h1>
           <motion.p 
             className="font-serif text-lg md:text-xl max-w-2xl text-secondary leading-relaxed"
             variants={fadeIn}
           >
-            Otimize suas operações culinárias com IA avançada. Controle custos, 
-            padronize receitas e aumente a eficiência da sua cozinha.
+            Uma plataforma completa e inovadora para implementar no CRM, marketing, SAC ou recuperação de clientes. 
+            Fale ativamente com cada cliente, do jeito certo, no momento certo.
           </motion.p>
         </motion.div>
       </section>
@@ -75,7 +75,7 @@ export default function MeuChef() {
           <motion.div variants={fadeIn}>
             <YouTubeEmbed 
               videoId="ZxzI9G6Cnbo" 
-              title="Demonstração Meu.Chef - Gestão Inteligente para Cozinhas Profissionais"
+              title="Demonstração Meu.Chef - Plataforma de Relacionamento Inteligente"
             />
           </motion.div>
         </motion.div>
@@ -99,34 +99,34 @@ export default function MeuChef() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {[
               {
-                title: "Gestão de Receitas",
-                description: "Padronização e controle de receitas com IA para garantir consistência e qualidade em todas as preparações.",
-                icon: ClipboardDocumentListIcon
+                title: "Interface Conversacional Ativa",
+                description: "Não espera o input do usuário, atua proativamente para se relacionar e evolui automaticamente conforme o funil de cada cliente.",
+                icon: ChatBubbleBottomCenterTextIcon
               },
               {
-                title: "Controle de Custos",
-                description: "Análise preditiva de custos e desperdício, otimizando seu CMV e aumentando a lucratividade.",
-                icon: BanknotesIcon
+                title: "Base de Conhecimento Avançada",
+                description: "100% personalizada para seu negócio, com agentes que conhecem profundamente sua marca e ativam conhecimento contextualizado.",
+                icon: BookOpenIcon
               },
               {
-                title: "Planejamento de Produção",
-                description: "IA que prevê demanda e sugere quantidades ideais de preparo, reduzindo desperdícios.",
+                title: "AI Analytics",
+                description: "Análise em tempo real das interações, identificando mudanças de comportamento e gerando insights direcionados.",
                 icon: ChartBarIcon
               },
               {
-                title: "Gestão de Estoque",
-                description: "Controle inteligente de inventário com alertas automáticos e sugestões de compras.",
-                icon: CubeIcon
+                title: "Controle de Custos",
+                description: "Monitoramento em tempo real do custo de cada interação, com seleção automática da LLM mais adequada para cada momento.",
+                icon: CurrencyDollarIcon
               },
               {
-                title: "Treinamento Virtual",
-                description: "Assistente virtual para treinamento de equipe e padronização de processos.",
-                icon: AcademicCapIcon
+                title: "Perfil de Clientes",
+                description: "Gestão profunda das informações e perfil de cada cliente, com histórico completo de interações.",
+                icon: UserGroupIcon
               },
               {
-                title: "Análise de Dados",
-                description: "Dashboard completo com insights em tempo real sobre sua operação.",
-                icon: PresentationChartLineIcon
+                title: "Customização Total",
+                description: "100% adaptável para qualquer negócio ou indústria, com objetivos de interação personalizados.",
+                icon: RocketLaunchIcon
               }
             ].map((feature, index) => (
               <motion.div 
@@ -160,29 +160,25 @@ export default function MeuChef() {
             className="font-sans text-3xl md:text-4xl text-primary mb-16 text-center font-extrabold"
             variants={fadeIn}
           >
-            Benefícios <span className="text-accent">Comprovados</span>
+            Aplicações <span className="text-accent">Práticas</span>
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
               {
-                stat: "40%",
-                title: "Redução de Desperdício",
-                description: "Através de previsão de demanda e controle preciso de porções."
+                title: "CRM & Marketing",
+                description: "Aumente o relacionamento de qualidade com os clientes e permita que o marketing explique melhor sobre as marcas."
               },
               {
-                stat: "25%",
-                title: "Economia em Compras",
-                description: "Com gestão inteligente de estoque e sugestões de fornecedores."
+                title: "Recuperação de Leads",
+                description: "Reative leads inativos e qualifique ativamente os clientes da base de forma personalizada."
               },
               {
-                stat: "60%",
-                title: "Mais Produtividade",
-                description: "Otimização de processos e automação de tarefas repetitivas."
+                title: "SAC Inteligente",
+                description: "Atendimento proativo que antecipa necessidades e resolve questões antes mesmo delas surgirem."
               },
               {
-                stat: "98%",
-                title: "Padronização",
-                description: "Garantia de qualidade consistente em todas as preparações."
+                title: "Insights de Negócio",
+                description: "Conheça de forma ativa o comportamento e perfil dos seus clientes, gerando insights valiosos em tempo real."
               }
             ].map((benefit, index) => (
               <motion.div 
@@ -190,10 +186,7 @@ export default function MeuChef() {
                 className="text-center md:text-left"
                 variants={fadeIn}
               >
-                <div className="text-5xl md:text-6xl font-extrabold text-accent mb-4">
-                  {benefit.stat}
-                </div>
-                <h3 className="font-sans text-xl text-primary font-extrabold mb-2">
+                <h3 className="font-sans text-xl text-primary font-extrabold mb-4">
                   {benefit.title}
                 </h3>
                 <p className="font-serif text-secondary">
@@ -218,22 +211,25 @@ export default function MeuChef() {
             className="font-sans text-3xl md:text-4xl mb-8 font-extrabold"
             variants={fadeIn}
           >
-            Pronto para revolucionar sua cozinha?
+            Pronto para revolucionar seu relacionamento com clientes?
           </motion.h2>
           <motion.p 
             className="font-serif text-lg mb-8"
             variants={fadeIn}
           >
-            Agende uma demonstração e descubra como o Meu.Chef pode transformar sua operação.
+            Agende uma demonstração e descubra como o Meu.Chef pode transformar a gestão do seu negócio.
           </motion.p>
-          <motion.button 
-            className="font-sans bg-background text-accent px-8 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
+          <motion.a 
+            href="https://wa.me/5511971916522"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-sans inline-block bg-background text-accent px-8 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
             variants={fadeIn}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Agendar Demo
-          </motion.button>
+            Entre em Contato
+          </motion.a>
         </motion.div>
       </section>
     </>

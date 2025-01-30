@@ -32,7 +32,7 @@ export default function Atuacao() {
           variants={staggerContainer}
         >
           <motion.h1 
-            className="font-sans text-4xl md:text-6xl lg:text-7xl text-primary mb-6 font-extrabold tracking-tight"
+            className="font-sans text-4xl md:text-6xl lg:text-7xl text-[#333333] mb-6 font-extrabold tracking-tight"
             variants={fadeIn}
           >
             Como as indústrias estão adotando <span className="text-accent">Inteligência Artificial</span>?
@@ -82,58 +82,6 @@ export default function Atuacao() {
               </p>
             </motion.div>
           </div>
-        </motion.div>
-      </section>
-
-      {/* Value Proposition Section */}
-      <section className="py-20 px-4 md:px-8 lg:px-16">
-        <motion.div 
-          className="max-w-6xl mx-auto"
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          variants={staggerContainer}
-        >
-          <motion.h2 
-            variants={fadeIn}
-            className="font-sans text-3xl md:text-4xl text-primary mb-16 text-center font-extrabold"
-          >
-            Nossa <span className="text-accent">Proposta de Valor</span>
-          </motion.h2>
-
-          <motion.div variants={fadeIn} className="text-center mb-20">
-            <h3 className="font-sans text-2xl text-primary font-bold mb-4">
-              Criar comunicações eficientes, construídas por meio de agentes inteligentes
-            </h3>
-            <p className="font-serif text-secondary text-lg">
-              Uma nuvem de agentes de Inteligência Artificial construída e aplicada para cada Negócio
-            </p>
-          </motion.div>
-
-          <motion.div variants={fadeIn} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 items-center justify-items-center">
-            {[
-              { name: 'AI Agents', desc: 'Personalizar estratégia\nPotencializar uso da IA' },
-              { name: 'Branding', desc: 'Identidade e posicionamento' },
-              { name: 'Personas', desc: 'Público-alvo e comportamento' },
-              { name: 'Setor & Mercado', desc: 'Análise competitiva' },
-              { name: 'Clientes', desc: 'Relacionamento e feedback' },
-              { name: 'Canais Digitais', desc: 'Presença e engajamento' },
-              { name: 'Content Score', desc: 'Métricas e otimização' }
-            ].map((item, index) => (
-              <div key={item.name} className="text-center space-y-2">
-                <div className="h-16 w-16 relative mx-auto">
-                  <Image
-                    src={`/icons/${item.name.toLowerCase().replace(' & ', '-').replace(' ', '-')}.svg`}
-                    alt={item.name}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <h4 className="font-sans text-primary font-bold">{item.name}</h4>
-                <p className="font-serif text-secondary text-sm whitespace-pre-line">{item.desc}</p>
-              </div>
-            ))}
-          </motion.div>
         </motion.div>
       </section>
 
@@ -223,48 +171,52 @@ export default function Atuacao() {
         </motion.div>
       </section>
 
-      {/* Final Section */}
+      {/* Value Proposition Section */}
       <section className="py-20 px-4 md:px-8 lg:px-16 bg-[#333333]">
         <motion.div 
-          className="max-w-4xl mx-auto text-center"
+          className="max-w-6xl mx-auto"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
           variants={staggerContainer}
         >
-          <motion.h2 
-            variants={fadeIn}
-            className="font-sans text-3xl md:text-4xl text-white mb-6 font-extrabold"
-          >
-            Nada substitui a criatividade humana.
-          </motion.h2>
-          <motion.p 
-            variants={fadeIn}
-            className="font-sans text-xl text-accent font-bold"
-          >
-            Apenas a IA escala com consistência.
-          </motion.p>
-
-          <motion.div 
-            variants={fadeIn}
-            className="grid md:grid-cols-3 gap-8 mt-16"
-          >
-            <div className="space-y-4">
-              <h3 className="font-sans text-accent text-xl">Agências</h3>
-              <p className="font-serif text-white/80">os criativos</p>
-              <p className="font-serif text-white/80">a big idea</p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="font-sans text-accent text-xl">Influenciador</h3>
-              <p className="font-serif text-white/80">os amplificadores</p>
-              <p className="font-serif text-white/80">a "projeção da realidade"</p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="font-sans text-accent text-xl">Inteligência Artificial</h3>
-              <p className="font-serif text-white/80">a consistência</p>
-              <p className="font-serif text-white/80">a escala</p>
-            </div>
+          <motion.div variants={fadeIn} className="text-center mb-16">
+            <h2 className="font-sans text-4xl text-white font-bold mb-4">
+              Nada substitui a criatividade humana.
+            </h2>
+            <h2 className="font-sans text-4xl text-accent font-bold">
+              Apenas a IA escala com consistência.
+            </h2>
           </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-12 lg:gap-20">
+            <motion.div variants={fadeIn} className="text-center">
+              <h3 className="font-sans text-2xl text-white font-bold mb-6">
+                Agências
+              </h3>
+              <p className="font-serif text-white/80 text-lg">
+                "A IA amplifica, mas nunca substitui a essência criativa que as agências criam para emocionar e conectar."
+              </p>
+            </motion.div>
+
+            <motion.div variants={fadeIn} className="text-center">
+              <h3 className="font-sans text-2xl text-white font-bold mb-6">
+                Influenciadores
+              </h3>
+              <p className="font-serif text-white/80 text-lg">
+                "Os influenciadores criam conexões genuínas com a sua autenticidade, enquanto a IA sustenta a consistência e a eficiência."
+              </p>
+            </motion.div>
+
+            <motion.div variants={fadeIn} className="text-center">
+              <h3 className="font-sans text-2xl text-white font-bold mb-6">
+                Inteligência Artificial
+              </h3>
+              <p className="font-serif text-white/80 text-lg">
+                "Com a IA, é possível multiplicar o impacto das ideias criativas, mantendo a essência em cada interação."
+              </p>
+            </motion.div>
+          </div>
         </motion.div>
       </section>
     </>

@@ -4,12 +4,12 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import MathAnimation from "@/components/MathAnimation"
 import {
-  ChartPieIcon,
-  PresentationChartLineIcon,
-  ChatBubbleBottomCenterTextIcon,
-  BoltIcon,
-  BriefcaseIcon,
-  ArrowPathIcon
+  SpeakerWaveIcon,
+  MapIcon,
+  ChartBarIcon,
+  LightBulbIcon,
+  UserGroupIcon,
+  UserIcon
 } from '@heroicons/react/24/outline'
 import YouTubeEmbed from '@/components/YouTubeEmbed'
 
@@ -48,17 +48,17 @@ export default function Salesvoice() {
             />
           </div>
           <motion.h1 
-            className="font-sans text-4xl md:text-6xl lg:text-7xl text-primary mb-6 font-extrabold tracking-tight"
+            className="font-sans text-4xl md:text-6xl lg:text-7xl text-[#333333] mb-6 font-extrabold tracking-tight"
             variants={fadeIn}
           >
-            Vendas potencializadas por <span className="text-accent">inteligência artificial</span>
+            Comunicação <span className="text-accent">personalizada</span> com sua equipe de vendas
           </motion.h1>
           <motion.p 
             className="font-serif text-lg md:text-xl max-w-2xl text-secondary leading-relaxed"
             variants={fadeIn}
           >
-            Maximize suas conversões com análise preditiva avançada e automação 
-            inteligente do processo de vendas.
+            Uma plataforma completa e inovadora para sua equipe de vendas. 
+            Fale com cada vendedor, do jeito certo, no momento certo, no dia certo.
           </motion.p>
         </motion.div>
       </section>
@@ -75,7 +75,7 @@ export default function Salesvoice() {
           <motion.div variants={fadeIn}>
             <YouTubeEmbed 
               videoId="Pc29ZuqmKko" 
-              title="Demonstração Salesvoice.io - Solução de Vendas Inteligente"
+              title="Demonstração Salesvoice.io - Plataforma de Comunicação para Equipes de Vendas"
             />
           </motion.div>
         </motion.div>
@@ -94,39 +94,39 @@ export default function Salesvoice() {
             className="font-sans text-3xl md:text-4xl text-primary mb-16 text-center font-extrabold"
             variants={fadeIn}
           >
-            Recursos <span className="text-accent">Inteligentes</span>
+            Recursos <span className="text-accent">Principais</span>
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {[
               {
-                title: "Lead Scoring",
-                description: "Priorize leads automaticamente com base em dados comportamentais e probabilidade de conversão.",
-                icon: ChartPieIcon
+                title: "Briefing Diário com IA",
+                description: "Briefings personalizados em áudio para cada vendedor se preparar durante o deslocamento, considerando perfil do cliente e estratégia do negócio.",
+                icon: SpeakerWaveIcon
               },
               {
-                title: "Análise Preditiva",
-                description: "Preveja tendências de vendas e identifique oportunidades com antecedência.",
-                icon: PresentationChartLineIcon
+                title: "Gestão de Visitas",
+                description: "Organização inteligente de roteiros, captura de relatos em tempo real e histórico completo de visitas que não se perde na troca de carteira.",
+                icon: MapIcon
               },
               {
-                title: "Automação de Outreach",
-                description: "Personalize e automatize o contato com prospects usando IA conversacional.",
-                icon: ChatBubbleBottomCenterTextIcon
+                title: "Estratégia Comercial",
+                description: "Comunicação eficiente de mudanças estratégicas e integração de informações do Marketing, Trade e CRM para toda a equipe.",
+                icon: ChartBarIcon
               },
               {
                 title: "Insights em Tempo Real",
-                description: "Monitore KPIs e receba recomendações estratégicas instantâneas.",
-                icon: BoltIcon
+                description: "Relatórios, sugestões e orientações geradas em tempo real para cada vendedor, enriquecendo planejamento e projeções.",
+                icon: LightBulbIcon
               },
               {
-                title: "CRM Inteligente",
-                description: "Gestão de relacionamentos com clientes potencializada por IA.",
-                icon: BriefcaseIcon
+                title: "Perfil de Clientes",
+                description: "Gestão profunda das informações e histórico completo de visitas de cada cliente para um relacionamento mais efetivo.",
+                icon: UserGroupIcon
               },
               {
-                title: "Otimização de Funil",
-                description: "Identifique e corrija gargalos no processo de vendas automaticamente.",
-                icon: ArrowPathIcon
+                title: "Perfil do Vendedor",
+                description: "Gestão personalizada de cada vendedor, permitindo comunicação adaptada para maximizar resultados individuais.",
+                icon: UserIcon
               }
             ].map((feature, index) => (
               <motion.div 
@@ -160,29 +160,25 @@ export default function Salesvoice() {
             className="font-sans text-3xl md:text-4xl text-primary mb-16 text-center font-extrabold"
             variants={fadeIn}
           >
-            Impacto <span className="text-accent">Comprovado</span>
+            Benefícios <span className="text-accent">Principais</span>
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
               {
-                stat: "60%",
-                title: "Mais Conversões",
-                description: "Aumento médio na taxa de conversão com leads qualificados por IA."
+                title: "Comercial e Food Service",
+                description: "Potencialize a atuação do time comercial e food service com comunicação personalizada e insights relevantes."
               },
               {
-                stat: "45%",
-                title: "Redução de Ciclo",
-                description: "Diminuição no tempo médio do ciclo de vendas com automação inteligente."
+                title: "Trade Otimizado",
+                description: "Permita que o trade opere melhor o negócio com informações integradas e atualizadas em tempo real."
               },
               {
-                stat: "90%",
-                title: "Precisão Preditiva",
-                description: "Taxa de acerto nas previsões de vendas e comportamento de leads."
+                title: "Marketing Conectado",
+                description: "Mantenha o marketing conectado com o campo em tempo real, alinhando estratégias e ações."
               },
               {
-                stat: "3x",
-                title: "Mais Produtividade",
-                description: "Aumento na produtividade da equipe de vendas com automação."
+                title: "Gestão Eficiente",
+                description: "Tome decisões baseadas no melhor contexto, com redução de tarefas administrativas e mais tempo para relacionamento."
               }
             ].map((benefit, index) => (
               <motion.div 
@@ -190,10 +186,7 @@ export default function Salesvoice() {
                 className="text-center md:text-left"
                 variants={fadeIn}
               >
-                <div className="text-5xl md:text-6xl font-extrabold text-accent mb-4">
-                  {benefit.stat}
-                </div>
-                <h3 className="font-sans text-xl text-primary font-extrabold mb-2">
+                <h3 className="font-sans text-xl text-primary font-extrabold mb-4">
                   {benefit.title}
                 </h3>
                 <p className="font-serif text-secondary">
@@ -218,22 +211,25 @@ export default function Salesvoice() {
             className="font-sans text-3xl md:text-4xl mb-8 font-extrabold"
             variants={fadeIn}
           >
-            Pronto para transformar suas vendas?
+            Pronto para potencializar sua equipe de vendas?
           </motion.h2>
           <motion.p 
             className="font-serif text-lg mb-8"
             variants={fadeIn}
           >
-            Agende uma demonstração e descubra como o Salesvoice.io pode revolucionar seu processo comercial.
+            Agende uma demonstração e descubra como o SalesVoice pode transformar a comunicação com sua equipe de vendas.
           </motion.p>
-          <motion.button 
-            className="font-sans bg-background text-accent px-8 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
+          <motion.a 
+            href="https://wa.me/5511971916522"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-sans inline-block bg-background text-accent px-8 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
             variants={fadeIn}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Agendar Demo
-          </motion.button>
+            Entre em Contato
+          </motion.a>
         </motion.div>
       </section>
     </>

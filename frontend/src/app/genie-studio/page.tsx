@@ -4,12 +4,12 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import MathAnimation from "@/components/MathAnimation"
 import {
-  PencilSquareIcon,
-  PhotoIcon,
-  FilmIcon,
-  MagnifyingGlassIcon,
-  UserGroupIcon,
-  ChartBarSquareIcon
+  WrenchIcon,
+  BuildingOfficeIcon,
+  ChartBarSquareIcon,
+  CogIcon,
+  AcademicCapIcon,
+  UserGroupIcon
 } from '@heroicons/react/24/outline'
 import YouTubeEmbed from '@/components/YouTubeEmbed'
 
@@ -48,17 +48,17 @@ export default function GenieStudio() {
             />
           </div>
           <motion.h1 
-            className="font-sans text-4xl md:text-6xl lg:text-7xl text-primary mb-6 font-extrabold tracking-tight"
+            className="font-sans text-4xl md:text-6xl lg:text-7xl text-[#333333] mb-6 font-extrabold tracking-tight"
             variants={fadeIn}
           >
-            Criação de conteúdo com <span className="text-accent">IA generativa</span>
+            Comunicação <span className="text-accent">integrada e consistente</span> em toda empresa
           </motion.h1>
           <motion.p 
             className="font-serif text-lg md:text-xl max-w-2xl text-secondary leading-relaxed"
             variants={fadeIn}
           >
-            Transforme sua produção de conteúdo com um estúdio digital completo potencializado 
-            por inteligência artificial de última geração.
+            Mantenha toda a empresa alinhada com sua estratégia de comunicação. Do marketing ao RH, 
+            do comercial ao SAC, todos comunicando com consistência e qualidade.
           </motion.p>
         </motion.div>
       </section>
@@ -75,7 +75,7 @@ export default function GenieStudio() {
           <motion.div variants={fadeIn}>
             <YouTubeEmbed 
               videoId="zAYd37arUyU" 
-              title="Demonstração GenieStudio.io - Estúdio de Criação Digital com IA"
+              title="Demonstração GenieStudio.io - Plataforma de Comunicação Integrada"
             />
           </motion.div>
         </motion.div>
@@ -94,39 +94,39 @@ export default function GenieStudio() {
             className="font-sans text-3xl md:text-4xl text-primary mb-16 text-center font-extrabold"
             variants={fadeIn}
           >
-            Recursos <span className="text-accent">Criativos</span>
+            Recursos <span className="text-accent">Principais</span>
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {[
               {
-                title: "Geração de Texto",
-                description: "Crie conteúdo original e envolvente com IA treinada em seu tom de voz e diretrizes de marca.",
-                icon: PencilSquareIcon
+                title: "Wizard & Actions",
+                description: "Crie fluxos de trabalho automatizados, direcione tarefas para agentes específicos e agende recorrências de execução.",
+                icon: WrenchIcon
               },
               {
-                title: "Criação de Imagens",
-                description: "Gere imagens únicas e personalizadas com modelos de IA de última geração.",
-                icon: PhotoIcon
+                title: "Desdobramento da Marca",
+                description: "Mantenha a consistência do branding em todos os canais, desde comunicação interna até campanhas de performance.",
+                icon: BuildingOfficeIcon
               },
               {
-                title: "Edição de Vídeo",
-                description: "Automatize a edição de vídeos com IA que entende contexto e narrativa.",
-                icon: FilmIcon
-              },
-              {
-                title: "Otimização SEO",
-                description: "Análise e otimização automática de conteúdo para melhor performance em buscas.",
-                icon: MagnifyingGlassIcon
-              },
-              {
-                title: "Personalização",
-                description: "Adapte conteúdo para diferentes públicos e canais automaticamente.",
-                icon: UserGroupIcon
-              },
-              {
-                title: "Analytics Avançado",
-                description: "Métricas detalhadas e insights de performance em tempo real.",
+                title: "Controle e Gestão",
+                description: "Configure estratégias diferentes para cada gestor de marca e controle custos por tarefa, usuário e marca.",
                 icon: ChartBarSquareIcon
+              },
+              {
+                title: "Customização Total",
+                description: "Adapte a estratégia de comunicação para cada marca e canal, com módulos especializados por área.",
+                icon: CogIcon
+              },
+              {
+                title: "Treinamento e RH",
+                description: "Monte treinamentos e capacite colaboradores mantendo a consistência da comunicação corporativa.",
+                icon: AcademicCapIcon
+              },
+              {
+                title: "Conhecimento Avançado",
+                description: "Cadastro qualificado de marcas, produtos, personas e estratégias de comunicação com agentes customizados.",
+                icon: UserGroupIcon
               }
             ].map((feature, index) => (
               <motion.div 
@@ -160,29 +160,25 @@ export default function GenieStudio() {
             className="font-sans text-3xl md:text-4xl text-primary mb-16 text-center font-extrabold"
             variants={fadeIn}
           >
-            Resultados <span className="text-accent">Extraordinários</span>
+            Aplicações <span className="text-accent">Práticas</span>
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
               {
-                stat: "300%",
-                title: "Mais Produtividade",
-                description: "Aumente drasticamente sua produção de conteúdo sem comprometer a qualidade."
+                title: "Marketing e Comunicação",
+                description: "Comunique-se efetivamente com todos os stakeholders, mantendo a consistência da marca em todos os canais."
               },
               {
-                stat: "70%",
-                title: "Redução de Custos",
-                description: "Diminua significativamente o custo por peça de conteúdo produzida."
+                title: "Trade e Comercial",
+                description: "Replique exatamente o que a comunicação e a marca desejam em todas as interações comerciais."
               },
               {
-                stat: "85%",
-                title: "Mais Engajamento",
-                description: "Conteúdo otimizado que realmente conecta com sua audiência."
+                title: "SAC e CRM",
+                description: "Enriqueça a experiência dos consumidores com comunicação alinhada e consistente."
               },
               {
-                stat: "24/7",
-                title: "Disponibilidade",
-                description: "Produção contínua com consistência e qualidade garantidas."
+                title: "Performance e Retail Media",
+                description: "Mantenha o branding consistente em todas as campanhas de performance e retail media."
               }
             ].map((benefit, index) => (
               <motion.div 
@@ -190,10 +186,7 @@ export default function GenieStudio() {
                 className="text-center md:text-left"
                 variants={fadeIn}
               >
-                <div className="text-5xl md:text-6xl font-extrabold text-accent mb-4">
-                  {benefit.stat}
-                </div>
-                <h3 className="font-sans text-xl text-primary font-extrabold mb-2">
+                <h3 className="font-sans text-xl text-primary font-extrabold mb-4">
                   {benefit.title}
                 </h3>
                 <p className="font-serif text-secondary">
@@ -218,22 +211,25 @@ export default function GenieStudio() {
             className="font-sans text-3xl md:text-4xl mb-8 font-extrabold"
             variants={fadeIn}
           >
-            Pronto para revolucionar sua produção de conteúdo?
+            Pronto para unificar sua comunicação?
           </motion.h2>
           <motion.p 
             className="font-serif text-lg mb-8"
             variants={fadeIn}
           >
-            Agende uma demonstração e descubra como o GenieStudio.io pode transformar seu processo criativo.
+            Agende uma demonstração e descubra como o GenieStudio pode transformar a comunicação da sua empresa.
           </motion.p>
-          <motion.button 
-            className="font-sans bg-background text-accent px-8 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
+          <motion.a 
+            href="https://wa.me/5511971916522"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-sans inline-block bg-background text-accent px-8 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
             variants={fadeIn}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Agendar Demo
-          </motion.button>
+            Entre em Contato
+          </motion.a>
         </motion.div>
       </section>
     </>

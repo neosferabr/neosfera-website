@@ -18,7 +18,7 @@ export default function Navbar() {
   ]
 
   const menuItems = [
-    { label: 'WHITELABEL', href: '/whitelabel' },
+    { label: 'WHITELABEL', href: '#', isText: true },
     { label: 'Meu.Chef', href: '/meu-chef' },
     { label: 'GenieStudio.io', href: '/genie-studio' },
     { label: 'Salesvoice.io', href: '/salesvoice' },
@@ -29,7 +29,7 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-primary/10">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#EEE9E1]/80 backdrop-blur-lg border-b border-primary/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
@@ -49,13 +49,22 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex md:items-center md:space-x-8">
             {menuItems.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="font-sans text-sm text-primary hover:text-accent transition-colors"
-              >
-                {item.label}
-              </Link>
+              item.isText ? (
+                <span
+                  key={item.label}
+                  className="font-sans text-sm text-primary cursor-default"
+                >
+                  {item.label}
+                </span>
+              ) : (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className="font-sans text-sm text-primary hover:text-accent transition-colors"
+                >
+                  {item.label}
+                </Link>
+              )
             ))}
           </div>
 
@@ -82,18 +91,27 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden overflow-hidden bg-background border-b border-primary/10"
+            className="md:hidden overflow-hidden bg-[#EEE9E1] border-b border-primary/10"
           >
             <div className="px-2 pt-2 pb-3 space-y-1">
               {menuItems.map((item) => (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  className="block px-3 py-2 text-base font-sans text-primary hover:text-accent transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.label}
-                </Link>
+                item.isText ? (
+                  <span
+                    key={item.label}
+                    className="block px-3 py-2 text-base font-sans text-primary cursor-default"
+                  >
+                    {item.label}
+                  </span>
+                ) : (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    className="block px-3 py-2 text-base font-sans text-primary hover:text-accent transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                )
               ))}
             </div>
           </motion.div>

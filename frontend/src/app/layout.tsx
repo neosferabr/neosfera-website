@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Albert_Sans, Roboto_Serif, Inter } from "next/font/google";
+import { Albert_Sans, Roboto_Serif } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -17,8 +17,6 @@ const robotoSerif = Roboto_Serif({
   display: 'swap',
 });
 
-const inter = Inter({ subsets: ['latin'] });
-
 export const metadata: Metadata = {
   title: "Neosfera - Aceleradora de Projetos de IA",
   description: "Consultoria especializada em aceleração de projetos de Inteligência Artificial",
@@ -30,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR">
-      <body className={`${inter.className} ${albertSans.variable} ${robotoSerif.variable} font-serif bg-background min-h-screen flex flex-col`}>
+    <html lang="pt-BR" className={`${albertSans.variable} ${robotoSerif.variable}`}>
+      <body className="font-sans bg-background text-primary antialiased min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
           {children}

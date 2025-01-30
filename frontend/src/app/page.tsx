@@ -33,17 +33,17 @@ export default function Home() {
           variants={staggerContainer}
         >
           <motion.h1 
-            className="font-sans text-4xl md:text-6xl lg:text-7xl text-primary mb-6 font-black tracking-tight"
+            className="font-sans text-4xl md:text-6xl lg:text-7xl text-[#333333] mb-6 font-black tracking-tight"
             variants={fadeIn}
           >
-            Transformando ideias em <span className="text-accent">inovação</span> através da IA
+            Inteligência artificial aplicada que <span className="text-accent">gera valor</span> a marcas e negócios.
           </motion.h1>
           <motion.p 
             className="font-serif text-lg md:text-xl max-w-2xl text-secondary leading-relaxed"
             variants={fadeIn}
           >
-            Aceleramos o desenvolvimento de projetos de Inteligência Artificial, 
-            transformando conceitos em soluções inovadoras e escaláveis.
+            Neosfera acelera o desenvolvimento de projetos de Inteligência Artificial, 
+            transformando ideias, projetos e conceitos em soluções inovadoras e escaláveis.
           </motion.p>
         </motion.div>
       </section>
@@ -73,7 +73,7 @@ export default function Home() {
             className="font-sans text-3xl md:text-4xl text-primary mb-16 text-center font-extrabold"
             variants={fadeIn}
           >
-            Produtos <span className="text-accent">Whitelabel</span>
+            Produtos <span className="text-accent">Whitelabel by neosfera</span>
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
@@ -101,7 +101,7 @@ export default function Home() {
                     />
                   </div>
                   <p className="font-serif text-secondary mb-6">
-                    Plataforma inteligente para gestão e otimização de cozinhas profissionais.
+                    Uma plataforma completa e inovadora para implementar no CRM, marketing, SAC ou recuperação de clientes.
                   </p>
                   <Link 
                     href="/meu-chef"
@@ -140,7 +140,7 @@ export default function Home() {
                     />
                   </div>
                   <p className="font-serif text-secondary mb-6">
-                    Estúdio de criação digital potencializado por IA para transformar suas ideias em conteúdo impactante.
+                    Comunicação integrada e consistente em toda empresa. Do marketing ao RH, do comercial ao SAC.
                   </p>
                   <Link 
                     href="/genie-studio"
@@ -179,7 +179,7 @@ export default function Home() {
                     />
                   </div>
                   <p className="font-serif text-secondary mb-6">
-                    Solução de vendas inteligente com análise preditiva para maximizar suas conversões.
+                    Comunicação personalizada com sua equipe de vendas. Fale com cada vendedor, do jeito certo, no momento certo.
                   </p>
                   <Link 
                     href="/salesvoice"
@@ -218,7 +218,7 @@ export default function Home() {
                     />
                   </div>
                   <p className="font-serif text-secondary mb-6">
-                    Assistente virtual especializado em gastronomia para potencializar sua criatividade culinária.
+                    Potencialize o conhecimento gastronômico da sua equipe com treinamento personalizado e suporte contínuo.
                   </p>
                   <Link 
                     href="/iculinary-chef"
@@ -298,7 +298,7 @@ export default function Home() {
             className="font-sans text-3xl md:text-4xl text-primary mb-6 text-center font-extrabold"
             variants={fadeIn}
           >
-            O que nossos <span className="text-accent">clientes</span> dizem
+            Parceiros e <span className="text-accent">referências</span> na inovação e transformação
           </motion.h2>
           <motion.p 
             className="font-serif text-lg text-secondary mb-16 text-center max-w-2xl mx-auto"
